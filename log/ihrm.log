@@ -1,0 +1,15 @@
+2020-02-14 16:04:53,929 INFO [api_login.py(login_inter:15)] - 登录信息：{'mobile': '13800000002', 'password': '123456'}
+2020-02-14 16:04:53,929 INFO [api_login.py(login_inter:16)] - 登录请求：信息头:{'Content-Type': 'application/json'},urlhttp://182.92.81.159/api/sys/login
+2020-02-14 16:04:54,039 INFO [test01_login.py(test_login:19)] - 登录结果：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'e41912cb-6595-4f1d-8294-d79c4bdcfde7'}
+2020-02-14 16:04:54,039 INFO [test01_login.py(test_login:24)] - token值：e41912cb-6595-4f1d-8294-d79c4bdcfde7
+2020-02-14 16:04:54,039 INFO [api_employee.py(add_employee:25)] - 新增员工信息数据：{'username': 'xixixi', 'mobile': '14900000000', 'workNumber': '478295'}
+2020-02-14 16:04:54,039 INFO [api_employee.py(add_employee:26)] - 新增员工请求：信息头:{'Content-Type': 'application/json', 'Authorization': 'Bearer e41912cb-6595-4f1d-8294-d79c4bdcfde7'},url:http://182.92.81.159/api/sys/user
+2020-02-14 16:04:54,149 INFO [test02_employee.py(test_01_add:17)] - 新增员工返回结果：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1228228593339158528'}}
+2020-02-14 16:04:54,149 INFO [test02_employee.py(test_01_add:20)] - ID值：1228228593339158528
+2020-02-14 16:04:54,149 INFO [api_employee.py(update_employee:33)] - 修改员工信息：{'username': 'xixixi-new'}
+2020-02-14 16:04:54,149 INFO [api_employee.py(update_employee:34)] - 修改员工请求：信息头:{'Content-Type': 'application/json', 'Authorization': 'Bearer e41912cb-6595-4f1d-8294-d79c4bdcfde7'},url:http://182.92.81.159/api/sys/user/1228228593339158528
+2020-02-14 16:04:54,279 INFO [test02_employee.py(test_02_update:26)] - 更新员工返回结果：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1228228593339158528'}}
+2020-02-14 16:04:54,279 INFO [api_employee.py(search_employee:39)] - 查询员工请求：信息头:{'Content-Type': 'application/json', 'Authorization': 'Bearer e41912cb-6595-4f1d-8294-d79c4bdcfde7'},url:http://182.92.81.159/api/sys/user/1228228593339158528
+2020-02-14 16:04:54,359 INFO [test02_employee.py(test_03_search:32)] - 查询员工返回结果：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1228228593339158528', 'mobile': '14900000000', 'username': 'xixixi-new', 'password': '3872cf754fe41d332924894a42351f23', 'enableState': 1, 'createTime': None, 'companyId': '1', 'companyName': '传智播客', 'departmentId': None, 'timeOfEntry': None, 'formOfEmployment': None, 'workNumber': '478295', 'formOfManagement': None, 'workingCity': None, 'correctionTime': None, 'inServiceStatus': None, 'departmentName': None, 'roleIds': [], 'staffPhoto': None}}
+2020-02-14 16:04:54,359 INFO [api_employee.py(delete_employee:44)] - 删除员工请求：信息头:{'Content-Type': 'application/json', 'Authorization': 'Bearer e41912cb-6595-4f1d-8294-d79c4bdcfde7'},url:http://182.92.81.159/api/sys/user/1228228593339158528
+2020-02-14 16:04:54,499 INFO [test02_employee.py(test_04_delete:37)] - 删除员工返回结果：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
